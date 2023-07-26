@@ -39,6 +39,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //agent.nextPosition = transform.position;
+        agent.nextPosition = transform.position;
     }
 }
