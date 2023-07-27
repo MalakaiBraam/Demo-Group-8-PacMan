@@ -25,7 +25,8 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log(rb.velocity.y);
         Vector2 CombinedMove = new Vector2(moveX, moveY);
         Vector2 NormalizedVelo = CombinedMove.normalized;
-        
+
+        agent.transform.position = new Vector3(transform.position.x, transform.position.y, 0.9833274f);
 
         // Move the player horizontally and vertically
         //rb.velocity = new Vector2(moveX * moveSpeed, moveY * moveSpeed);

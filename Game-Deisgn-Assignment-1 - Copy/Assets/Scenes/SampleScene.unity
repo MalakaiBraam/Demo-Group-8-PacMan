@@ -109997,10 +109997,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 6803938528746730226, guid: b32669d1bacf6bc48aaa4750f421db2d, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 6803938528746730238, guid: b32669d1bacf6bc48aaa4750f421db2d, type: 3}
       propertyPath: m_BodyType
       value: 0
@@ -130124,9 +130120,9 @@ NavMeshAgent:
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
+  m_AutoTraverseOffMeshLink: 0
   m_AutoBraking: 1
-  m_AutoRepath: 1
+  m_AutoRepath: 0
   m_Height: 0.57
   m_BaseOffset: 0.3
   m_WalkableMask: 4294967295
