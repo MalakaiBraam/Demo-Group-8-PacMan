@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Playerr
+  - Node
   layers:
   - Default
   - TransparentFX
