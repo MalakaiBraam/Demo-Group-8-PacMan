@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    MovementController movementContoller;
+    MovementController movementController;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        movementContoller = GetComponent<MovementController>();
+        movementController = GetComponent<MovementController>();
     }
 
     // Update is called once per frame
@@ -17,19 +17,19 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            movementContoller.SetDirection("left");
+            movementController.SetDirection("left");
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            movementContoller.SetDirection("right");
+            movementController.SetDirection("right");
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            movementContoller.SetDirection("up");
+            movementController.SetDirection("up");
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            movementContoller.SetDirection("down");
+            movementController.SetDirection("down");
         }
     }
 }

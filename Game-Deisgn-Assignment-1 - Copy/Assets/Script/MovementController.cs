@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
+    public GameManager gameManager;
+
     public GameObject currentNode;
     public float speed = 4f;
+
     public string direction = "";
     public string lastMovingDirection = "";
 
+    public bool canWarp = true;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -36,25 +40,54 @@ public class MovementController : MonoBehaviour
         //Check if we are at the center of the currentNode
         if ((transform.position.x == currentNode.transform.position.x && transform.position.y == currentNode.transform.position.y) ||reverseDirection)
         {
-            //Gets the next node from the node controller using the current direction
-            GameObject newNode = currentNodeController.GetNodeFromDirection(direction);
-
-            //checks if we can move in the direction we want it to move in
-            if (newNode != null)
+            //if we reached the center of left warp, warp to right warp
+            if (currentNodeController.isWarpLeftNode && canWarp)
             {
-                currentNode = newNode;
-                lastMovingDirection = direction;
+                currentNode = gameManager.rightWarpNode;
+                direction = "left";
+                lastMovingDirection = "left";
+                transform.position = currentNode.transform.position;
+                canWarp = false;
             }
-            //we can't move in the desired direction but tries to move in the last direction
+            //if we reached the center of right warp, warp to left warp
+            else if (currentNodeController.isWarpRightNode && canWarp)
+            {
+                currentNode = gameManager.leftWarpNode;
+                direction = "right";
+                lastMovingDirection = "right";
+                transform.position = currentNode.transform.position;
+                canWarp = false;
+            }
+            //Otherwise find the next node we are moving towards
             else
             {
-                direction = lastMovingDirection;
-                newNode = currentNodeController.GetNodeFromDirection(direction);
+                //Gets the next node from the node controller using the current direction
+                GameObject newNode = currentNodeController.GetNodeFromDirection(direction);
+
+                //checks if we can move in the direction we want it to move in
                 if (newNode != null)
                 {
                     currentNode = newNode;
+                    lastMovingDirection = direction;
+                }
+                //we can't move in the desired direction but tries to move in the last direction
+                else
+                {
+                    direction = lastMovingDirection;
+                    newNode = currentNodeController.GetNodeFromDirection(direction);
+                    if (newNode != null)
+                    {
+                        currentNode = newNode;
+                    }
                 }
             }
+
+            
+        }
+        //We arent in the center of a node
+        else
+        {
+            canWarp = true;
         }
     }
 
