@@ -17,9 +17,24 @@ public class NodeController : MonoBehaviour
     public bool isWarpRightNode = false;
     public bool isWarpLeftNode = false;
 
+    public SpriteRenderer palletSprite;
+
+    //if the node contains a pallet when the game starts
+    public bool isPalletNode = false;
+    //if the node has a pallet
+    public bool hasPallet = false;
+
+
     // Start is called before the first frame update
     void Awake()
     {
+        if (transform.childCount > 0)
+        {
+            hasPallet = true;
+            isPalletNode = true;
+            palletSprite = GetComponentInChildren<SpriteRenderer>(); 
+        }
+
         RaycastHit2D[] hitsDown;
         //Shoot a raycast line going down
         hitsDown = Physics2D.RaycastAll(transform.position, -Vector2.up);
@@ -108,6 +123,15 @@ public class NodeController : MonoBehaviour
       else
         {
             return null;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player" && isPalletNode)
+        {
+            hasPallet = false;
+            palletSprite.enabled = false;
         }
     }
 }
