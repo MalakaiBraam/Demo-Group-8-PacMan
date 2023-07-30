@@ -18,6 +18,7 @@ public class NodeController : MonoBehaviour
     public bool isWarpLeftNode = false;
 
     public SpriteRenderer palletSprite;
+    public GameManager gameManager;
 
     //if the node contains a pallet when the game starts
     public bool isPalletNode = false;
@@ -28,6 +29,7 @@ public class NodeController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         if (transform.childCount > 0)
         {
             hasPallet = true;
@@ -128,10 +130,11 @@ public class NodeController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && isPalletNode)
+        if (collision.tag == "Player" && hasPallet)
         {
             hasPallet = false;
             palletSprite.enabled = false;
+            gameManager.CollectedPallet(this);
         }
     }
 }
