@@ -287,6 +287,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &7692062
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +453,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &27215523
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +535,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &27389255
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,6 +617,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &28139336
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +867,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &42170965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,6 +1537,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &70548210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,6 +1619,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &89950051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,6 +1701,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &97279382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,6 +1867,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &100555605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,6 +2117,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &123315889
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,6 +2199,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &126589316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,6 +2281,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &135968264
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,6 +2531,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &141419390
 GameObject:
   m_ObjectHideFlags: 0
@@ -2671,6 +2697,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &142748462
 GameObject:
   m_ObjectHideFlags: 0
@@ -2751,6 +2779,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &153857117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,6 +2861,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &161194266
 GameObject:
   m_ObjectHideFlags: 0
@@ -2995,6 +3027,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &173233025
 GameObject:
   m_ObjectHideFlags: 0
@@ -3053,10 +3087,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b126baee47b845f469b988544c5a85a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   currentNode: {fileID: 100515592}
   speed: 4
   direction: 
   lastMovingDirection: 
+  canWarp: 1
 --- !u!1 &174007842
 GameObject:
   m_ObjectHideFlags: 0
@@ -3137,6 +3173,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &175109703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3469,6 +3507,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &181056622
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,6 +3673,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &188234906
 GameObject:
   m_ObjectHideFlags: 0
@@ -3713,6 +3755,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &190338619
 GameObject:
   m_ObjectHideFlags: 0
@@ -3793,6 +3837,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &194841432
 GameObject:
   m_ObjectHideFlags: 0
@@ -3873,6 +3919,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &196164335
 GameObject:
   m_ObjectHideFlags: 0
@@ -4037,6 +4085,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &200165150
 GameObject:
   m_ObjectHideFlags: 0
@@ -4117,6 +4167,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &200388058
 GameObject:
   m_ObjectHideFlags: 0
@@ -4281,6 +4333,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &202152832
 GameObject:
   m_ObjectHideFlags: 0
@@ -4445,6 +4499,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &204620468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4525,6 +4581,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &210947862
 GameObject:
   m_ObjectHideFlags: 0
@@ -4773,6 +4831,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &225716858
 GameObject:
   m_ObjectHideFlags: 0
@@ -5189,6 +5249,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &261289498
 GameObject:
   m_ObjectHideFlags: 0
@@ -5353,6 +5415,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &276067220
 GameObject:
   m_ObjectHideFlags: 0
@@ -5433,6 +5497,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &279872281
 GameObject:
   m_ObjectHideFlags: 0
@@ -5597,6 +5663,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &298730779
 GameObject:
   m_ObjectHideFlags: 0
@@ -5677,6 +5745,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &299613823
 GameObject:
   m_ObjectHideFlags: 0
@@ -6177,6 +6247,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &322526337
 GameObject:
   m_ObjectHideFlags: 0
@@ -6425,6 +6497,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &333613043
 GameObject:
   m_ObjectHideFlags: 0
@@ -6673,6 +6747,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &343678154
 GameObject:
   m_ObjectHideFlags: 0
@@ -6921,6 +6997,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &347798563
 GameObject:
   m_ObjectHideFlags: 0
@@ -7001,6 +7079,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &356299071
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,6 +7161,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &357982224
 GameObject:
   m_ObjectHideFlags: 0
@@ -7161,6 +7243,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &358906135
 GameObject:
   m_ObjectHideFlags: 0
@@ -7325,6 +7409,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &359029158
 GameObject:
   m_ObjectHideFlags: 0
@@ -7489,6 +7575,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &378255300
 GameObject:
   m_ObjectHideFlags: 0
@@ -7569,6 +7657,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &395310032
 GameObject:
   m_ObjectHideFlags: 0
@@ -7649,6 +7739,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &404930522
 GameObject:
   m_ObjectHideFlags: 0
@@ -7897,6 +7989,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &426763114
 GameObject:
   m_ObjectHideFlags: 0
@@ -8061,6 +8155,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &436557277
 GameObject:
   m_ObjectHideFlags: 0
@@ -8225,6 +8321,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &441114103
 GameObject:
   m_ObjectHideFlags: 0
@@ -8473,6 +8571,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &448112619
 GameObject:
   m_ObjectHideFlags: 0
@@ -8553,6 +8653,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &450574101
 GameObject:
   m_ObjectHideFlags: 0
@@ -8633,6 +8735,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &454660200
 GameObject:
   m_ObjectHideFlags: 0
@@ -8713,6 +8817,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &454727860
 GameObject:
   m_ObjectHideFlags: 0
@@ -8793,6 +8899,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &458237708
 GameObject:
   m_ObjectHideFlags: 0
@@ -9041,6 +9149,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &463624770
 GameObject:
   m_ObjectHideFlags: 0
@@ -9205,6 +9315,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &475807746
 GameObject:
   m_ObjectHideFlags: 0
@@ -9285,6 +9397,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &478401356
 GameObject:
   m_ObjectHideFlags: 0
@@ -9701,6 +9815,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &489889429
 GameObject:
   m_ObjectHideFlags: 0
@@ -10033,6 +10149,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &502090602
 GameObject:
   m_ObjectHideFlags: 0
@@ -10113,6 +10231,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &503733704
 GameObject:
   m_ObjectHideFlags: 0
@@ -10277,6 +10397,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &511608724
 GameObject:
   m_ObjectHideFlags: 0
@@ -10441,6 +10563,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &521369453
 GameObject:
   m_ObjectHideFlags: 0
@@ -10605,6 +10729,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &533007582
 GameObject:
   m_ObjectHideFlags: 0
@@ -10685,6 +10811,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &533783459
 GameObject:
   m_ObjectHideFlags: 0
@@ -10849,6 +10977,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &535983864
 GameObject:
   m_ObjectHideFlags: 0
@@ -11013,6 +11143,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &546128698
 GameObject:
   m_ObjectHideFlags: 0
@@ -11177,6 +11309,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &550979449
 GameObject:
   m_ObjectHideFlags: 0
@@ -11509,6 +11643,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &567188622
 GameObject:
   m_ObjectHideFlags: 0
@@ -11673,6 +11809,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &572550358
 GameObject:
   m_ObjectHideFlags: 0
@@ -11837,6 +11975,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &573393132
 GameObject:
   m_ObjectHideFlags: 0
@@ -11917,6 +12057,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &574174106
 GameObject:
   m_ObjectHideFlags: 0
@@ -12249,6 +12391,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &586466276
 GameObject:
   m_ObjectHideFlags: 0
@@ -12329,6 +12473,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &590307412
 GameObject:
   m_ObjectHideFlags: 0
@@ -12493,6 +12639,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &597276158
 GameObject:
   m_ObjectHideFlags: 0
@@ -12573,6 +12721,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &612826078
 GameObject:
   m_ObjectHideFlags: 0
@@ -12653,6 +12803,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &613119804
 GameObject:
   m_ObjectHideFlags: 0
@@ -12733,6 +12885,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &616889196
 GameObject:
   m_ObjectHideFlags: 0
@@ -13394,6 +13548,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &635728756
 GameObject:
   m_ObjectHideFlags: 0
@@ -13474,6 +13630,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &635755936
 GameObject:
   m_ObjectHideFlags: 0
@@ -13554,6 +13712,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &639009192
 GameObject:
   m_ObjectHideFlags: 0
@@ -13718,6 +13878,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &644787990
 GameObject:
   m_ObjectHideFlags: 0
@@ -13798,6 +13960,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &650306922
 GameObject:
   m_ObjectHideFlags: 0
@@ -14046,6 +14210,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &666563480
 GameObject:
   m_ObjectHideFlags: 0
@@ -14126,6 +14292,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &672426003
 GameObject:
   m_ObjectHideFlags: 0
@@ -14206,6 +14374,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &675190098
 GameObject:
   m_ObjectHideFlags: 0
@@ -14286,6 +14456,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &676323002
 GameObject:
   m_ObjectHideFlags: 0
@@ -14534,6 +14706,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &690252904
 GameObject:
   m_ObjectHideFlags: 0
@@ -14614,6 +14788,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &692308774
 GameObject:
   m_ObjectHideFlags: 0
@@ -14694,6 +14870,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &694227700
 GameObject:
   m_ObjectHideFlags: 0
@@ -15110,6 +15288,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &704284820
 GameObject:
   m_ObjectHideFlags: 0
@@ -15190,6 +15370,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &706770750
 GameObject:
   m_ObjectHideFlags: 0
@@ -15270,6 +15452,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &710798753
 GameObject:
   m_ObjectHideFlags: 0
@@ -15350,6 +15534,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &725829057
 GameObject:
   m_ObjectHideFlags: 0
@@ -15766,6 +15952,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &745666871
 GameObject:
   m_ObjectHideFlags: 0
@@ -16014,6 +16202,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &760709954
 GameObject:
   m_ObjectHideFlags: 0
@@ -16094,6 +16284,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &762413881
 GameObject:
   m_ObjectHideFlags: 0
@@ -16258,6 +16450,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &773664611
 GameObject:
   m_ObjectHideFlags: 0
@@ -16338,6 +16532,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &779001540
 GameObject:
   m_ObjectHideFlags: 0
@@ -16418,6 +16614,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &780509950
 GameObject:
   m_ObjectHideFlags: 0
@@ -16582,6 +16780,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &781404357
 GameObject:
   m_ObjectHideFlags: 0
@@ -17670,6 +17870,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &812826553
 GameObject:
   m_ObjectHideFlags: 0
@@ -17834,6 +18036,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &815380110
 GameObject:
   m_ObjectHideFlags: 0
@@ -17914,6 +18118,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &816172937
 GameObject:
   m_ObjectHideFlags: 0
@@ -18078,6 +18284,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &829175677
 GameObject:
   m_ObjectHideFlags: 0
@@ -18410,6 +18618,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &847095033
 GameObject:
   m_ObjectHideFlags: 0
@@ -18574,6 +18784,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &860349648
 GameObject:
   m_ObjectHideFlags: 0
@@ -18654,6 +18866,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &877082237
 GameObject:
   m_ObjectHideFlags: 0
@@ -18818,6 +19032,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &880792867
 GameObject:
   m_ObjectHideFlags: 0
@@ -18982,6 +19198,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &891211196
 GameObject:
   m_ObjectHideFlags: 0
@@ -19146,6 +19364,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &909138103
 GameObject:
   m_ObjectHideFlags: 0
@@ -19226,6 +19446,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &914917831
 GameObject:
   m_ObjectHideFlags: 0
@@ -19558,6 +19780,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &923782331
 GameObject:
   m_ObjectHideFlags: 0
@@ -19722,6 +19946,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &943598613
 GameObject:
   m_ObjectHideFlags: 0
@@ -19802,6 +20028,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &946617389
 GameObject:
   m_ObjectHideFlags: 0
@@ -19966,6 +20194,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &948194353
 GameObject:
   m_ObjectHideFlags: 0
@@ -20046,6 +20276,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &954861043
 GameObject:
   m_ObjectHideFlags: 0
@@ -20126,6 +20358,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &955548685
 GameObject:
   m_ObjectHideFlags: 0
@@ -20206,6 +20440,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &964054770
 GameObject:
   m_ObjectHideFlags: 0
@@ -20370,6 +20606,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &965881133
 GameObject:
   m_ObjectHideFlags: 0
@@ -20450,6 +20688,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &967157533
 GameObject:
   m_ObjectHideFlags: 0
@@ -20614,6 +20854,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &982392110
 GameObject:
   m_ObjectHideFlags: 0
@@ -20694,6 +20936,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &987303993
 GameObject:
   m_ObjectHideFlags: 0
@@ -20774,6 +21018,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1001905559
 GameObject:
   m_ObjectHideFlags: 0
@@ -20938,6 +21184,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1006576188
 GameObject:
   m_ObjectHideFlags: 0
@@ -21102,6 +21350,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1014722388
 GameObject:
   m_ObjectHideFlags: 0
@@ -21182,6 +21432,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1015729453
 GameObject:
   m_ObjectHideFlags: 0
@@ -21346,6 +21598,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1022617903
 GameObject:
   m_ObjectHideFlags: 0
@@ -21426,6 +21680,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1025980319
 GameObject:
   m_ObjectHideFlags: 0
@@ -21506,6 +21762,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1027472286
 GameObject:
   m_ObjectHideFlags: 0
@@ -21670,6 +21928,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1029181122
 GameObject:
   m_ObjectHideFlags: 0
@@ -21750,6 +22010,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1032512811
 GameObject:
   m_ObjectHideFlags: 0
@@ -21914,6 +22176,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1042144890
 GameObject:
   m_ObjectHideFlags: 0
@@ -22330,6 +22594,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1065849319
 GameObject:
   m_ObjectHideFlags: 0
@@ -22410,6 +22676,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1082704855
 GameObject:
   m_ObjectHideFlags: 0
@@ -22658,6 +22926,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1095136746
 GameObject:
   m_ObjectHideFlags: 0
@@ -22738,6 +23008,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1096670091
 GameObject:
   m_ObjectHideFlags: 0
@@ -22902,6 +23174,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1101207880
 GameObject:
   m_ObjectHideFlags: 0
@@ -23150,6 +23424,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1110964449
 GameObject:
   m_ObjectHideFlags: 0
@@ -23230,6 +23506,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1115843195
 GameObject:
   m_ObjectHideFlags: 0
@@ -23310,6 +23588,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1119048408
 GameObject:
   m_ObjectHideFlags: 0
@@ -23474,6 +23754,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1121310711
 GameObject:
   m_ObjectHideFlags: 0
@@ -23554,6 +23836,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1121444682
 GameObject:
   m_ObjectHideFlags: 0
@@ -23802,6 +24086,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1131485528
 GameObject:
   m_ObjectHideFlags: 0
@@ -23882,6 +24168,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1132953583
 GameObject:
   m_ObjectHideFlags: 0
@@ -23962,6 +24250,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1134989422
 GameObject:
   m_ObjectHideFlags: 0
@@ -24042,6 +24332,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1136107025
 GameObject:
   m_ObjectHideFlags: 0
@@ -24206,6 +24498,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1145531315
 GameObject:
   m_ObjectHideFlags: 0
@@ -24286,6 +24580,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1152970595
 GameObject:
   m_ObjectHideFlags: 0
@@ -24366,6 +24662,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1154641133
 GameObject:
   m_ObjectHideFlags: 0
@@ -24446,6 +24744,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1155779603
 GameObject:
   m_ObjectHideFlags: 0
@@ -25030,6 +25330,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1179462624
 GameObject:
   m_ObjectHideFlags: 0
@@ -25110,6 +25412,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1181378536
 GameObject:
   m_ObjectHideFlags: 0
@@ -25190,6 +25494,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1181389834
 GameObject:
   m_ObjectHideFlags: 0
@@ -25438,6 +25744,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1196892482
 GameObject:
   m_ObjectHideFlags: 0
@@ -25602,6 +25910,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1199905454
 GameObject:
   m_ObjectHideFlags: 0
@@ -25850,6 +26160,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1209731884
 GameObject:
   m_ObjectHideFlags: 0
@@ -25930,6 +26242,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1210397155
 GameObject:
   m_ObjectHideFlags: 0
@@ -26010,6 +26324,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1212064693
 GameObject:
   m_ObjectHideFlags: 0
@@ -26090,6 +26406,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1214234457
 GameObject:
   m_ObjectHideFlags: 0
@@ -26338,6 +26656,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1235802733
 GameObject:
   m_ObjectHideFlags: 0
@@ -26586,6 +26906,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1246652353
 GameObject:
   m_ObjectHideFlags: 0
@@ -26666,6 +26988,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1247162451
 GameObject:
   m_ObjectHideFlags: 0
@@ -26746,6 +27070,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1248097327
 GameObject:
   m_ObjectHideFlags: 0
@@ -26910,6 +27236,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1257714726
 GameObject:
   m_ObjectHideFlags: 0
@@ -27158,6 +27486,39 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
+--- !u!1 &1263097728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263097729}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1263097729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263097728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1158125, y: -0.22553575, z: 0.034430057}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1268206089
 GameObject:
   m_ObjectHideFlags: 0
@@ -27406,6 +27767,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1275531927
 GameObject:
   m_ObjectHideFlags: 0
@@ -27570,6 +27933,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1286763973
 GameObject:
   m_ObjectHideFlags: 0
@@ -27818,6 +28183,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1296480702
 GameObject:
   m_ObjectHideFlags: 0
@@ -27898,6 +28265,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1297406490
 GameObject:
   m_ObjectHideFlags: 0
@@ -27978,6 +28347,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1315127286
 GameObject:
   m_ObjectHideFlags: 0
@@ -28058,6 +28429,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1316957448
 GameObject:
   m_ObjectHideFlags: 0
@@ -28474,6 +28847,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1331989382
 GameObject:
   m_ObjectHideFlags: 0
@@ -28554,6 +28929,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1343700101
 GameObject:
   m_ObjectHideFlags: 0
@@ -28886,6 +29263,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1354255370
 GameObject:
   m_ObjectHideFlags: 0
@@ -29050,6 +29429,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1357611529
 GameObject:
   m_ObjectHideFlags: 0
@@ -29214,6 +29595,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1369651258
 GameObject:
   m_ObjectHideFlags: 0
@@ -29378,6 +29761,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1376960945
 GameObject:
   m_ObjectHideFlags: 0
@@ -29458,6 +29843,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1379498629
 GameObject:
   m_ObjectHideFlags: 0
@@ -29958,6 +30345,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1403876947
 GameObject:
   m_ObjectHideFlags: 0
@@ -30038,6 +30427,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1405365066
 GameObject:
   m_ObjectHideFlags: 0
@@ -30118,6 +30509,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1406581929
 GameObject:
   m_ObjectHideFlags: 0
@@ -30198,6 +30591,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1406649718
 GameObject:
   m_ObjectHideFlags: 0
@@ -30362,6 +30757,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1408411583
 GameObject:
   m_ObjectHideFlags: 0
@@ -30526,6 +30923,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1413790859
 GameObject:
   m_ObjectHideFlags: 0
@@ -30606,6 +31005,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1415723021
 GameObject:
   m_ObjectHideFlags: 0
@@ -30854,6 +31255,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1421888583
 GameObject:
   m_ObjectHideFlags: 0
@@ -30934,6 +31337,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1422136246
 GameObject:
   m_ObjectHideFlags: 0
@@ -31098,6 +31503,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1438506256
 GameObject:
   m_ObjectHideFlags: 0
@@ -31262,6 +31669,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1439897454
 GameObject:
   m_ObjectHideFlags: 0
@@ -31342,6 +31751,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1446804337
 GameObject:
   m_ObjectHideFlags: 0
@@ -31506,6 +31917,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1449506155
 GameObject:
   m_ObjectHideFlags: 0
@@ -31586,6 +31999,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1450781127
 GameObject:
   m_ObjectHideFlags: 0
@@ -31666,6 +32081,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1452707759
 GameObject:
   m_ObjectHideFlags: 0
@@ -31746,6 +32163,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1453920716
 GameObject:
   m_ObjectHideFlags: 0
@@ -31994,6 +32413,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1467478223
 GameObject:
   m_ObjectHideFlags: 0
@@ -32242,6 +32663,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1475580282
 GameObject:
   m_ObjectHideFlags: 0
@@ -32322,6 +32745,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1476002209
 GameObject:
   m_ObjectHideFlags: 0
@@ -32822,6 +33247,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1490575057
 GameObject:
   m_ObjectHideFlags: 0
@@ -32902,6 +33329,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1492586167
 GameObject:
   m_ObjectHideFlags: 0
@@ -33066,6 +33495,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1496886148
 GameObject:
   m_ObjectHideFlags: 0
@@ -33146,6 +33577,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1496927133
 GameObject:
   m_ObjectHideFlags: 0
@@ -33226,6 +33659,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1500156372
 GameObject:
   m_ObjectHideFlags: 0
@@ -33306,6 +33741,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1501988754
 GameObject:
   m_ObjectHideFlags: 0
@@ -33386,6 +33823,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1508999582
 GameObject:
   m_ObjectHideFlags: 0
@@ -33802,6 +34241,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1520111800
 GameObject:
   m_ObjectHideFlags: 0
@@ -33882,6 +34323,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1529872293
 GameObject:
   m_ObjectHideFlags: 0
@@ -33962,6 +34405,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1530466428
 GameObject:
   m_ObjectHideFlags: 0
@@ -34042,6 +34487,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1533743560
 GameObject:
   m_ObjectHideFlags: 0
@@ -34122,6 +34569,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1536723939
 GameObject:
   m_ObjectHideFlags: 0
@@ -34202,6 +34651,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1540155974
 GameObject:
   m_ObjectHideFlags: 0
@@ -34366,6 +34817,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1562629660
 GameObject:
   m_ObjectHideFlags: 0
@@ -34530,6 +34983,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1576694558
 GameObject:
   m_ObjectHideFlags: 0
@@ -35198,6 +35653,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1599040127
 GameObject:
   m_ObjectHideFlags: 0
@@ -35362,6 +35819,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1599526113
 GameObject:
   m_ObjectHideFlags: 0
@@ -35442,6 +35901,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1601372757
 GameObject:
   m_ObjectHideFlags: 0
@@ -35522,6 +35983,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1602408887
 GameObject:
   m_ObjectHideFlags: 0
@@ -35686,6 +36149,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1603074865
 GameObject:
   m_ObjectHideFlags: 0
@@ -35766,6 +36231,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1605427057
 GameObject:
   m_ObjectHideFlags: 0
@@ -35846,6 +36313,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1605926461
 GameObject:
   m_ObjectHideFlags: 0
@@ -36010,6 +36479,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1609869029
 GameObject:
   m_ObjectHideFlags: 0
@@ -36090,6 +36561,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1610700048
 GameObject:
   m_ObjectHideFlags: 0
@@ -36338,6 +36811,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1615374669
 GameObject:
   m_ObjectHideFlags: 0
@@ -36502,6 +36977,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1622913680
 GameObject:
   m_ObjectHideFlags: 0
@@ -36666,6 +37143,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1630590437
 GameObject:
   m_ObjectHideFlags: 0
@@ -36746,6 +37225,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1631427474
 GameObject:
   m_ObjectHideFlags: 0
@@ -36826,6 +37307,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1633118975
 GameObject:
   m_ObjectHideFlags: 0
@@ -37158,6 +37641,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1643878575
 GameObject:
   m_ObjectHideFlags: 0
@@ -37322,6 +37807,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1648334202
 GameObject:
   m_ObjectHideFlags: 0
@@ -37402,6 +37889,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1649456356
 GameObject:
   m_ObjectHideFlags: 0
@@ -37482,6 +37971,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1649874939
 GameObject:
   m_ObjectHideFlags: 0
@@ -37730,6 +38221,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1655858146
 GameObject:
   m_ObjectHideFlags: 0
@@ -37810,6 +38303,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1658347101
 GameObject:
   m_ObjectHideFlags: 0
@@ -38142,6 +38637,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1668796310
 GameObject:
   m_ObjectHideFlags: 0
@@ -38222,6 +38719,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1677381008
 GameObject:
   m_ObjectHideFlags: 0
@@ -38470,6 +38969,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1687616125
 GameObject:
   m_ObjectHideFlags: 0
@@ -38550,6 +39051,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1689426194
 GameObject:
   m_ObjectHideFlags: 0
@@ -38630,6 +39133,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1694023966
 GameObject:
   m_ObjectHideFlags: 0
@@ -38710,6 +39215,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1699578852
 GameObject:
   m_ObjectHideFlags: 0
@@ -38790,6 +39297,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1700748616
 GameObject:
   m_ObjectHideFlags: 0
@@ -38870,6 +39379,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1706611240
 GameObject:
   m_ObjectHideFlags: 0
@@ -38950,6 +39461,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1726429136
 GameObject:
   m_ObjectHideFlags: 0
@@ -39030,6 +39543,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1729117500
 GameObject:
   m_ObjectHideFlags: 0
@@ -39110,6 +39625,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1729815873
 GameObject:
   m_ObjectHideFlags: 0
@@ -39190,6 +39707,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1730894621
 GameObject:
   m_ObjectHideFlags: 0
@@ -39354,6 +39873,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1737274526
 GameObject:
   m_ObjectHideFlags: 0
@@ -39434,6 +39955,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1738767785
 GameObject:
   m_ObjectHideFlags: 0
@@ -40522,6 +41045,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1802028297
 GameObject:
   m_ObjectHideFlags: 0
@@ -40770,6 +41295,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1822271982
 GameObject:
   m_ObjectHideFlags: 0
@@ -41018,6 +41545,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1825779386
 GameObject:
   m_ObjectHideFlags: 0
@@ -41182,6 +41711,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1827254326
 GameObject:
   m_ObjectHideFlags: 0
@@ -41262,6 +41793,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1829151073
 GameObject:
   m_ObjectHideFlags: 0
@@ -41426,6 +41959,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1830936565
 GameObject:
   m_ObjectHideFlags: 0
@@ -41758,6 +42293,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1841739371
 GameObject:
   m_ObjectHideFlags: 0
@@ -41922,6 +42459,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1848841397
 GameObject:
   m_ObjectHideFlags: 0
@@ -42086,6 +42625,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1849858121
 GameObject:
   m_ObjectHideFlags: 0
@@ -42166,6 +42707,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1851090314
 GameObject:
   m_ObjectHideFlags: 0
@@ -42246,6 +42789,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1853823663
 GameObject:
   m_ObjectHideFlags: 0
@@ -42326,6 +42871,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1856401579
 GameObject:
   m_ObjectHideFlags: 0
@@ -42574,6 +43121,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1872911050
 GameObject:
   m_ObjectHideFlags: 0
@@ -42654,6 +43203,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1876049078
 GameObject:
   m_ObjectHideFlags: 0
@@ -42818,6 +43369,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1881285495
 GameObject:
   m_ObjectHideFlags: 0
@@ -42898,6 +43451,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1881883644
 GameObject:
   m_ObjectHideFlags: 0
@@ -43062,6 +43617,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1888868923
 GameObject:
   m_ObjectHideFlags: 0
@@ -43142,6 +43699,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1897212357
 GameObject:
   m_ObjectHideFlags: 0
@@ -43390,6 +43949,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1914523889
 GameObject:
   m_ObjectHideFlags: 0
@@ -43638,6 +44199,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1922967826
 GameObject:
   m_ObjectHideFlags: 0
@@ -43718,6 +44281,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1926886091
 GameObject:
   m_ObjectHideFlags: 0
@@ -43798,6 +44363,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1927228224
 GameObject:
   m_ObjectHideFlags: 0
@@ -43962,6 +44529,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1927511893
 GameObject:
   m_ObjectHideFlags: 0
@@ -44378,6 +44947,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1937917047
 GameObject:
   m_ObjectHideFlags: 0
@@ -44542,6 +45113,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1944107296
 GameObject:
   m_ObjectHideFlags: 0
@@ -44958,6 +45531,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1953240884
 GameObject:
   m_ObjectHideFlags: 0
@@ -45038,6 +45613,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1954796156
 GameObject:
   m_ObjectHideFlags: 0
@@ -45202,6 +45779,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1961506923
 GameObject:
   m_ObjectHideFlags: 0
@@ -45618,6 +46197,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1978071528
 GameObject:
   m_ObjectHideFlags: 0
@@ -45698,6 +46279,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1981204481
 GameObject:
   m_ObjectHideFlags: 0
@@ -45778,6 +46361,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1987193557
 GameObject:
   m_ObjectHideFlags: 0
@@ -45942,6 +46527,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1995209888
 GameObject:
   m_ObjectHideFlags: 0
@@ -46022,6 +46609,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &1999338370
 GameObject:
   m_ObjectHideFlags: 0
@@ -46102,6 +46691,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2001064189
 GameObject:
   m_ObjectHideFlags: 0
@@ -46266,6 +46857,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2010196039
 GameObject:
   m_ObjectHideFlags: 0
@@ -46514,6 +47107,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2019652625
 GameObject:
   m_ObjectHideFlags: 0
@@ -46594,6 +47189,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2020502150
 GameObject:
   m_ObjectHideFlags: 0
@@ -46758,6 +47355,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2029025675
 GameObject:
   m_ObjectHideFlags: 0
@@ -46838,6 +47437,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2029536536
 GameObject:
   m_ObjectHideFlags: 0
@@ -46918,6 +47519,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2035569509
 GameObject:
   m_ObjectHideFlags: 0
@@ -46998,6 +47601,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2037402556
 GameObject:
   m_ObjectHideFlags: 0
@@ -47078,6 +47683,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2041568375
 GameObject:
   m_ObjectHideFlags: 0
@@ -47326,6 +47933,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2047443202
 GameObject:
   m_ObjectHideFlags: 0
@@ -47574,6 +48183,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2065616066
 GameObject:
   m_ObjectHideFlags: 0
@@ -47654,6 +48265,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2067474374
 GameObject:
   m_ObjectHideFlags: 0
@@ -47818,6 +48431,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2070842936
 GameObject:
   m_ObjectHideFlags: 0
@@ -48234,6 +48849,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2083320531
 GameObject:
   m_ObjectHideFlags: 0
@@ -48650,6 +49267,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2096948709
 GameObject:
   m_ObjectHideFlags: 0
@@ -48898,6 +49517,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2101153575
 GameObject:
   m_ObjectHideFlags: 0
@@ -49062,6 +49683,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2115417112
 GameObject:
   m_ObjectHideFlags: 0
@@ -49310,6 +49933,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2135003705
 GameObject:
   m_ObjectHideFlags: 0
@@ -49474,6 +50099,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2142414925
 GameObject:
   m_ObjectHideFlags: 0
@@ -49554,6 +50181,8 @@ MonoBehaviour:
   nodeRight: {fileID: 0}
   nodeUp: {fileID: 0}
   nodeDown: {fileID: 0}
+  isWarpRightNode: 0
+  isWarpLeftNode: 0
 --- !u!1 &2144029534
 GameObject:
   m_ObjectHideFlags: 0
