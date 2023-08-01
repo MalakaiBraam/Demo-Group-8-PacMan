@@ -26,6 +26,8 @@ public class NodeController : MonoBehaviour
     //if the node has a pallet
     public bool hasPallet = false;
 
+    public bool isSideNode = false;
+
 
     // Start is called before the first frame update
     void Awake()

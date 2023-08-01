@@ -45,7 +45,7 @@ public class MovementController : MonoBehaviour
         {
             if (isGhost)
             {
-                GetComponent<EnemyController>().ReachedCenterOfNode(currentNodeController);
+                GetComponent<EnemyControllerTester>().ReachedCenterOfNode(currentNodeController);
             }
             //if we reached the center of left warp, warp to right warp
             if (currentNodeController.isWarpLeftNode && canWarp)
@@ -68,7 +68,10 @@ public class MovementController : MonoBehaviour
             //Otherwise find the next node we are moving towards
             else
             { 
-                
+                if (currentNodeController.isGhostStartingNode && direction == "down" && (!isGhost || GetComponent<EnemyControllerTester>().ghostNodeState != EnemyControllerTester.GhostNodesStatesEnum.respawning))
+                {
+                    direction = lastMovingDirection;
+                }
                 //Gets the next node from the node controller using the current direction
                 GameObject newNode = currentNodeController.GetNodeFromDirection(direction);
 
@@ -97,6 +100,11 @@ public class MovementController : MonoBehaviour
         {
             canWarp = true;
         }
+    }
+
+    public void SetSpeed(float newSpeed)
+    {
+        speed = newSpeed;
     }
 
     public void SetDirection(string newDirection)
