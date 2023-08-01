@@ -47,6 +47,8 @@ public class EnemyControllerTester : MonoBehaviour
 
     public GameObject[] scatterNodes;
     public int scatterNodeIndex;
+
+    public bool leftHomeBefore = false;
     // Start is called before the first frame update
     void Awake()
     {
@@ -59,7 +61,8 @@ public class EnemyControllerTester : MonoBehaviour
             respawnState = GhostNodesStatesEnum.centerNode;
             startingNode = ghostNodeStart;
             readyToLeaveHome = true;
-            Debug.Log("Red is at start Node");
+            //Debug.Log("Red is at start Node");
+            leftHomeBefore = true;
         }
         else if (ghostType == GhostType.pink)
         {
@@ -107,6 +110,7 @@ public class EnemyControllerTester : MonoBehaviour
     {
         if (ghostNodeState == GhostNodesStatesEnum.movingInNodes)
         {
+            leftHomeBefore = true;
             //Scatter Mode
             if(gameManager.currentGhostMode == GameManager.GhostMode.scatter)
             {
@@ -116,7 +120,8 @@ public class EnemyControllerTester : MonoBehaviour
             //Frightened mode
             else if (isFrightened)
             {
-
+                string direction = GetRandomDirection();
+                movementController.SetDirection(direction);
             }
             //Chase Mode
             else
@@ -225,6 +230,33 @@ public class EnemyControllerTester : MonoBehaviour
         movementController.SetDirection(direction);
     }
 
+    string GetRandomDirection()
+    {
+        List<string> possibleDirections = new List<string>();
+        NodeController nodeController = movementController.currentNode.GetComponent<NodeController>();
+
+        if(nodeController.canMoveDown && movementController.lastMovingDirection != "up")
+        {
+            possibleDirections.Add("down");
+        }
+        if (nodeController.canMoveUp && movementController.lastMovingDirection != "down")
+        {
+            possibleDirections.Add("up");
+        }
+        if (nodeController.canMoveRight && movementController.lastMovingDirection != "left")
+        {
+            possibleDirections.Add("right");
+        }
+        if (nodeController.canMoveLeft && movementController.lastMovingDirection != "right")
+        {
+            possibleDirections.Add("left");
+        }
+
+        string direction = "";
+        int randomDirectionIndex = Random.Range(0, possibleDirections.Count - 1);
+        direction = possibleDirections[randomDirectionIndex];
+        return direction;
+    }
     void DetermineRedGhostDirection()
     {
         string direction = GetClosestDirection(gameManager.pacman.transform.position);

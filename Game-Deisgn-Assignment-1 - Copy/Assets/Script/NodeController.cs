@@ -35,6 +35,7 @@ public class NodeController : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         if (transform.childCount > 0)
         {
+            gameManager.GotPelletFromNodeController();
             hasPallet = true;
             isPalletNode = true;
             palletSprite = GetComponentInChildren<SpriteRenderer>(); 
