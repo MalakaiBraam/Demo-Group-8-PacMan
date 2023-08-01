@@ -19,6 +19,11 @@ public class GameManager : MonoBehaviour
     public GameObject ghostNodeCentre;
     public GameObject ghostNodeStart;
 
+    public GameObject redGhost;
+    public GameObject pinkGhost;
+    public GameObject blueGhost;
+    public GameObject orangeGhost;
+
     public enum GhostMode
     {
         chase, scatter
