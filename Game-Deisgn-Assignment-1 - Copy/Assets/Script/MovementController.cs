@@ -14,10 +14,12 @@ public class MovementController : MonoBehaviour
 
     public bool canWarp = true;
 
+    public bool isGhost = false;
+
     // Start is called before the first frame update
     void Awake()
     {
-        lastMovingDirection = "left";
+        
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
@@ -41,6 +43,10 @@ public class MovementController : MonoBehaviour
         //Check if we are at the center of the currentNode
         if ((transform.position.x == currentNode.transform.position.x && transform.position.y == currentNode.transform.position.y) ||reverseDirection)
         {
+            if (isGhost)
+            {
+                GetComponent<EnemyController>().ReachedCenterOfNode(currentNodeController);
+            }
             //if we reached the center of left warp, warp to right warp
             if (currentNodeController.isWarpLeftNode && canWarp)
             {
@@ -61,7 +67,8 @@ public class MovementController : MonoBehaviour
             }
             //Otherwise find the next node we are moving towards
             else
-            {
+            { 
+                
                 //Gets the next node from the node controller using the current direction
                 GameObject newNode = currentNodeController.GetNodeFromDirection(direction);
 

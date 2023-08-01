@@ -20,6 +20,7 @@ public class NodeController : MonoBehaviour
     public SpriteRenderer palletSprite;
     public GameManager gameManager;
 
+    public bool isGhostStartingNode = false;
     //if the node contains a pallet when the game starts
     public bool isPalletNode = false;
     //if the node has a pallet
@@ -95,6 +96,12 @@ public class NodeController : MonoBehaviour
                 canMoveLeft = true;
                 nodeLeft = hitsLeft[i].collider.gameObject;
             }
+        }
+
+        if (isGhostStartingNode)
+        {
+            canMoveDown = true;
+            nodeDown = gameManager.ghostNodeCentre;
         }
     }
 
