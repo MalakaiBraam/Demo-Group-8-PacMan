@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/BackupScenes/Part 15-SettingUpALevel-Tamera.unity
+    guid: 7cff55e247f799b49a7596ffe8f15439
   m_configObjects: {}

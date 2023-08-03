@@ -17,16 +17,21 @@ public class NodeController : MonoBehaviour
     public bool isWarpRightNode = false;
     public bool isWarpLeftNode = false;
 
-    public SpriteRenderer palletSprite;
+    public SpriteRenderer pelletSprite;
+
     public GameManager gameManager;
 
     public bool isGhostStartingNode = false;
     //if the node contains a pallet when the game starts
-    public bool isPalletNode = false;
+    public bool isPelletNode = false;
     //if the node has a pallet
-    public bool hasPallet = false;
+    public bool hasPellet = false;
 
     public bool isSideNode = false;
+
+    public bool isPowerPellet = false;
+
+    public float powerPelletBlinkingTimer = 0;
 
 
     // Start is called before the first frame update
@@ -35,10 +40,10 @@ public class NodeController : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         if (transform.childCount > 0)
         {
-            gameManager.GotPelletFromNodeController();
-            hasPallet = true;
-            isPalletNode = true;
-            palletSprite = GetComponentInChildren<SpriteRenderer>(); 
+            gameManager.GotPelletFromNodeController(this);
+            hasPellet = true;
+            isPelletNode = true;
+            pelletSprite = GetComponentInChildren<SpriteRenderer>(); 
         }
 
         RaycastHit2D[] hitsDown;
@@ -111,7 +116,20 @@ public class NodeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!gameManager.gameIsRunning)
+        {
+            return;
+        }
+
+        if(isPowerPellet && hasPellet)
+        {
+            powerPelletBlinkingTimer += Time.deltaTime;
+            if(powerPelletBlinkingTimer >= 0.1f)
+            {
+                powerPelletBlinkingTimer = 0;
+                pelletSprite.enabled = !pelletSprite.enabled;
+            }
+        }
     }
 
     public GameObject GetNodeFromDirection(string direction)
@@ -138,13 +156,22 @@ public class NodeController : MonoBehaviour
         }
     }
 
+    public void RespawnPellet()
+    {
+        if(isPelletNode)
+        {
+            hasPellet = true;
+            pelletSprite.enabled = true;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && hasPallet)
+        if (collision.tag == "Player" && hasPellet)
         {
-            hasPallet = false;
-            palletSprite.enabled = false;
-            gameManager.CollectedPallet(this);
+            hasPellet = false;
+            pelletSprite.enabled = false;
+            StartCoroutine(gameManager.CollectedPellet(this));
         }
     }
 }
