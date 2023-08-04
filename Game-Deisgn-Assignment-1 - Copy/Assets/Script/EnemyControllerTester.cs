@@ -101,8 +101,10 @@ public class EnemyControllerTester : MonoBehaviour
         {
             readyToLeaveHome = true;
         }
-   
-        
+
+
+       nodeController = GameObject.FindObjectOfType<NodeController>();
+
     }
 
     public void Setup()
@@ -375,7 +377,8 @@ public class EnemyControllerTester : MonoBehaviour
         }
 
         string direction = "";
-        int randomDirectionIndex = Random.Range(0, possibleDirections.Count - 1);
+        //int randomDirectionIndex = Random.Range(0, possibleDirections.Count - 1);
+        int randomDirectionIndex = Random.Range(0, possibleDirections.Count^1);
         direction = possibleDirections[randomDirectionIndex];
         return direction;
     }
@@ -470,7 +473,7 @@ public class EnemyControllerTester : MonoBehaviour
 
         NodeController nodeController = movementController.currentNode.GetComponent<NodeController>();
         //if ghost can move up but not reverse
-        if (nodeController.canMoveUp && lastMovingDirection != "down")
+        if (nodeController.canMoveUp && lastMovingDirection != "down") 
         {
             //get node above us
             GameObject nodeUp = nodeController.nodeUp;

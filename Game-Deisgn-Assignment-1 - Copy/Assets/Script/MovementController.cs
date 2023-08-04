@@ -7,6 +7,9 @@ public class MovementController : MonoBehaviour
     public GameManager gameManager;
 
     public GameObject currentNode;
+
+    public EnemyControllerTester enemyControllerTester;
+    
     public float speed = 4f;
 
     public string direction = "";
@@ -19,9 +22,13 @@ public class MovementController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        
+        enemyControllerTester = GetComponent<EnemyControllerTester>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+       
+
+
     }
+
 
     // Update is called once per frame
     void Update()
