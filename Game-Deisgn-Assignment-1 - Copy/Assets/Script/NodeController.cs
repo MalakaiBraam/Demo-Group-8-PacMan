@@ -80,12 +80,19 @@ public class NodeController : MonoBehaviour
         //Shoot a raycast line going down
         hitsRight = Physics2D.RaycastAll(transform.position, Vector2.right);
 
+        
+
         //Loop through all gameobjects that the raycast hits 
         for (int i = 0; i < hitsRight.Length; i++)
         {
+            //Debug.DrawRay(transform.position, Vector2.right, Color.red,100f);
+            //Debug.DrawRay(transform.position, -Vector2.right, Color.blue,100f);
+            //Debug.DrawLine(transform.position, hitsRight[i].point, Color.red,100f);
+
             float distance = Mathf.Abs(hitsRight[i].point.x - transform.position.x);
             if (distance < 0.4f)
             {
+              
                 canMoveRight = true;
                 nodeRight = hitsRight[i].collider.gameObject;
             }
@@ -116,6 +123,8 @@ public class NodeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+
         if (!gameManager.gameIsRunning)
         {
             return;
