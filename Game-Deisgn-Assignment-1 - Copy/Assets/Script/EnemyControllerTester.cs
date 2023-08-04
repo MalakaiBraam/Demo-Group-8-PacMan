@@ -141,6 +141,7 @@ public class EnemyControllerTester : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if(ghostNodeState != GhostNodesStatesEnum.movingInNodes || !gameManager.isPowerPelletRunning)
         {
             isFrightened = false;
@@ -377,8 +378,8 @@ public class EnemyControllerTester : MonoBehaviour
         }
 
         string direction = "";
-        //int randomDirectionIndex = Random.Range(0, possibleDirections.Count - 1);
-        int randomDirectionIndex = Random.Range(0, possibleDirections.Count^1);
+        int randomDirectionIndex = Random.Range(0, possibleDirections.Count - 1);
+       // int randomDirectionIndex = Random.Range(0, possibleDirections.Count^1);
         direction = possibleDirections[randomDirectionIndex];
         return direction;
     }
