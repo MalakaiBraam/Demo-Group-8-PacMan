@@ -101,6 +101,7 @@ public class EnemyControllerTester : MonoBehaviour
         {
             readyToLeaveHome = true;
         }
+       
 
 
        nodeController = GameObject.FindObjectOfType<NodeController>();
@@ -141,7 +142,8 @@ public class EnemyControllerTester : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(ghostNodeState != GhostNodesStatesEnum.movingInNodes || !gameManager.isPowerPelletRunning)
+        
+        if (ghostNodeState != GhostNodesStatesEnum.movingInNodes || !gameManager.isPowerPelletRunning)
         {
             isFrightened = false;
         }
@@ -286,10 +288,12 @@ public class EnemyControllerTester : MonoBehaviour
                 else if (respawnState == GhostNodesStatesEnum.leftNode)
                 {
                     direction = "left";
+                   // ghostNodeState = respawnState;
                 }
                 else if (respawnState == GhostNodesStatesEnum.rightNode)
                 {
                     direction = "right";
+                   // ghostNodeState = respawnState;
                 }
             }//if our respawn state is either left or right then leave home again
             else if (
@@ -377,8 +381,8 @@ public class EnemyControllerTester : MonoBehaviour
         }
 
         string direction = "";
-        //int randomDirectionIndex = Random.Range(0, possibleDirections.Count - 1);
-        int randomDirectionIndex = Random.Range(0, possibleDirections.Count^1);
+        int randomDirectionIndex = Random.Range(0, possibleDirections.Count - 1);
+        //int randomDirectionIndex = Random.Range(0, possibleDirections.Count^1);
         direction = possibleDirections[randomDirectionIndex];
         return direction;
     }
